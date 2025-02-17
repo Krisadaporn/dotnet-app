@@ -7,8 +7,13 @@ class Program
     {
         Console.WriteLine("Hello, World!");
 
-        // Keep the console window open until a key is pressed
-        Console.WriteLine("Press any key to exit...");
-        Console.ReadKey();
+        // Optional: Ask for user input
+        Console.Write("Enter your name: ");
+        string name = Console.ReadLine();
+        Console.WriteLine($"Hello, {name}!");
+
+        // Wait by asking the user to hit the ENTER key explicitly
+        Console.WriteLine("Press ENTER to exit...");
+        Console.ReadLine(); // This works even without an actual console
     }
 }
